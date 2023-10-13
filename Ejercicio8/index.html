@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Cookies y LocalStorage</title>
+</head>
+<body>
+    <h1>Comprobar Datos Personales</h1>
+    
+    <div id="formulario">
+        <h2>Ingresa tus Datos Personales:</h2>
+        <form id="datosPersonalesForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br><br>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required><br><br>
+            
+            <label for="profesion">Profesión:</label>
+            <input type="text" id="profesion" required><br><br>
+            
+            <button type="button" onclick="guardarDatos()">Guardar Datos</button>
+        </form>
+    </div>
+    
+    <div id="datosGuardados" style="display:none;">
+        <h2>Tus Datos Personales:</h2>
+        <p id="mostrarNombre"></p>
+        <p id="mostrarDireccion"></p>
+        <p id="mostrarEdad"></p>
+        <p id="mostrarProfesion"></p>
+        <button type="button" onclick="borrarDatos()">Borrar Datos</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
